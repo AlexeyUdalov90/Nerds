@@ -3,39 +3,42 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог шаблонов</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body page-body--inner">
   <header class="page-header">
-    <a href="index.html" class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logo.jpg" alt="Логотип Nerds" width="" height="">
+    <a href="index.html" class="link page-header__logo">
+      <img class="image page-header__logo-image" src="img/logo.jpg" alt="Логотип Nerds" width="" height="">
     </a>
     <nav class="navigation">
-      <ul class="navigation__site-list site-navigation">
+      <ul class="site-navigation navigation__site-list">
         <li class="site-navigation__item">
-          <a href="#" class="site-navigation__link">Студия</a>
+          <a href="#" class="link site-navigation__link">Студия</a>
         </li>
         <li class="site-navigation__item">
-          <a href="#" class="site-navigation__link">Клиенты</a>
+          <a href="#" class="link site-navigation__link">Клиенты</a>
         </li>
         <li class="site-navigation__item">
-          <a href="#" class="site-navigation__link site-navigation__link--current">Магазин</a>
+          <a href="#" class="link site-navigation__link site-navigation__link--current">Магазин</a>
         </li>
         <li class="site-navigation__item">
-          <a href="#" class="site-navigation__link">Контакты</a>
+          <a href="#" class="link site-navigation__link">Контакты</a>
         </li>
       </ul>
-      <ul class="navigation__user-list user-navigation">
+      <ul class="user-navigation navigation__user-list">
         <li class="user-navigation__item user-navigation__item--basket">
-          <a href="#" class="user-navigation__link">Корзина</a>
+          <a href="#" class="link user-navigation__link">Корзина</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title">Магазин готовых шаблонов</h1>
+    <div class="page-main__item page-main__item--title">
+      <h1 class="page-main__title">Магазин готовых шаблонов</h1>
+    </div>
 
-    <section class="filter">
+    <section class="filter page-main__item">
       <h2 class="visually-hidden">Фильтр</h2>
       <form action="" method="get" class="filter-form">
         <fildset class="filter-form__box">
@@ -54,21 +57,21 @@
           <legend class="filter-form__title">Сетка:</legend>
           <ul class="radio-list filter-form__content">
             <li class="radio-list__item">
-              <label class="radio-list__label">
+              <label class="radio">
                 <input type="radio" class="visually-hidden" name="grid" value="adaptive" checked>
-                <span class="radio-list__control"></span>Адаптивная
+                <span class="radio__control radio__control--checked"></span>Адаптивная
               </label>
             </li>
             <li class="radio-list__item">
-              <label class="radio-list__label">
+              <label class="radio">
                 <input type="radio" class="visually-hidden" name="grid" value="fixed">
-                <span class="radio-list__control"></span>Фиксированная
+                <span class="radio__control"></span>Фиксированная
               </label>
             </li>
             <li class="radio-list__item">
-              <label class="radio-list__label">
+              <label class="radio">
                 <input type="radio" class="visually-hidden" name="grid" value="rubber">
-                <span class="radio-list__control"></span>Резиновая
+                <span class="radio__control"></span>Резиновая
               </label>
             </li>
           </ul>
@@ -77,33 +80,33 @@
           <legend class="filter-form__title">Особенности:</legend>
           <ul class="checkbox-list filter-form__content">
             <li class="checkbox-list__item">
-              <label for="" class="checkbox-list__label">
+              <label class="checkbox">
                 <input type="checkbox" class="visually-hidden" name="slider" checked>
-                <span class="checkbox-list__control"></span>Слайдер
+                <span class="checkbox__control checkbox__control--checked"></span>Слайдер
               </label>
             </li>
             <li class="checkbox-list__item">
-              <label for="" class="checkbox-list__label">
+              <label class="checkbox">
                 <input type="checkbox" class="visually-hidden" name="pluses">
-                <span class="checkbox-list__control"></span>Блок преимущества
+                <span class="checkbox__control"></span>Блок преимущества
               </label>
             </li>
             <li class="checkbox-list__item">
-              <label for="" class="checkbox-list__label">
+              <label class="checkbox">
                 <input type="checkbox" class="visually-hidden" name="news" checked>
-                <span class="checkbox-list__control"></span>Новости
+                <span class="checkbox__control checkbox__control--checked"></span>Новости
               </label>
             </li>
             <li class="checkbox-list__item">
-              <label for="" class="checkbox-list__label">
+              <label class="checkbox">
                 <input type="checkbox" class="visually-hidden" name="gallery">
-                <span class="checkbox-list__control"></span>Галерея
+                <span class="checkbox__control"></span>Галерея
               </label>
             </li>
             <li class="checkbox-list__item">
-              <label for="" class="checkbox-list__label">
+              <label class="checkbox">
                 <input type="checkbox" class="visually-hidden" name="basket">
-                <span class="checkbox-list__control"></span>Корзина
+                <span class="checkbox__control"></span>Корзина
               </label>
             </li>
           </ul>
@@ -112,132 +115,134 @@
       </form>
     </section>
 
-    <section class="sorting">
-      <h2 class="visually-hidden">Сортировка макетов</h2>
-      <b class="sorting__title">Сортировать</b>
+    <section class="sorting page-main__item">
+      <h2 class="sorting__title">Сортировать</h2>
       <ul class="sorting__list">
         <li class="sorting__item">По цене</li>
         <li class="sorting__item">По типу</li>
         <li class="sorting__item">По названию</li>
-        <li class="sorting__item sorting__item--up"><span class="visually-hidden">По возрастанию стоимости</span></li>
-        <li class="sorting__item sorting__item--down"><span class="visually-hidden">По убыванию стоимости</span></li>
+        <li class="sorting__item sorting__item--up"><span class="visually-hidden">По возрастанию</span></li>
+        <li class="sorting__item sorting__item--down"><span class="visually-hidden">По убыванию</span></li>
       </ul>
     </section>
 
-    <section class="catalog">
+    <section class="catalog page-main__item">
       <h2 class="visually-hidden">Список макетов</h2>
-      <ul class="catalog__list shop-list">
+      <ul class="shop-list catalog__list">
         <li class="shop-list__item">
-          <a href="#" class="shop-list__link">
-            <img src="" alt="Макет Sedona" class="shop-list__image" width="" height="">
+          <a href="#" class="link shop-list__link">
+            <!-- Шапка -->
+            <img src="" alt="Макет Sedona" class="image shop-list__image" width="" height="">
           </a>
           <div class="shop-list__description">
             <b class="shop-list__title">Sedona</b>
             <span class="shop-list__text">Информационный сайт для туристов</span>
-            <a href="" class="button shop-list__button">9 900 руб.</a>
+            <a href="" class="link button shop-list__button">9 900 руб.</a>
           </div>
         </li>
         <li class="shop-list__item">
-          <a href="#" class="shop-list__link">
-            <img src="" alt="Макет Pink" class="shop-list__image" width="" height="">
+          <a href="#" class="link shop-list__link">
+            <img src="" alt="Макет Pink" class="image shop-list__image" width="" height="">
           </a>
           <div class="shop-list__description">
             <b class="shop-list__title">Pink app</b>
             <span class="shop-list__text">Продуктовый лендинг приложения для iOS и Android</span>
-            <a href="" class="button shop-list__button">9 900 руб.</a>
+            <a href="" class="link button shop-list__button">9 900 руб.</a>
           </div>
         </li>
         <li class="shop-list__item">
-          <a href="#" class="shop-list__link">
-            <img src="" alt="Макет Barbershop" class="shop-list__image" width="" height="">
+          <a href="#" class="link shop-list__link">
+            <img src="" alt="Макет Barbershop" class="iamge shop-list__image" width="" height="">
           </a>
           <div class="shop-list__description">
             <b class="shop-list__title">Barbershop</b>
             <span class="shop-list__text">Сайт салоны красоты.Для мужчин, да.</span>
-            <a href="" class="button shop-list__button">9 900 руб.</a>
+            <a href="" class="link button shop-list__button">9 900 руб.</a>
           </div>
         </li>
         <li class="shop-list__item">
-          <a href="#" class="shop-list__link">
-            <img src="" alt="Макет Mishka" class="shop-list__image" width="" height="">
+          <a href="#" class="link shop-list__link">
+            <img src="" alt="Макет Mishka" class="image shop-list__image" width="" height="">
           </a>
           <div class="shop-list__description">
             <b class="shop-list__title">Mishka</b>
             <span class="shop-list__text">Интернет-магазин вязаных игрушек</span>
-            <a href="" class="button shop-list__button">9 900 руб.</a>
+            <a href="" class="link button shop-list__button">9 900 руб.</a>
           </div>
         </li>
         <li class="shop-list__item">
-          <a href="#" class="shop-list__link">
-            <img src="" alt="Макет Plus" class="shop-list__image" width="" height="">
+          <a href="#" class="link shop-list__link">
+            <img src="" alt="Макет Plus" class="image shop-list__image" width="" height="">
           </a>
           <div class="shop-list__description">
             <b class="shop-list__title">A plus</b>
             <span class="shop-list__text">Лендинг курсов повышения квалификации</span>
-            <a href="" class="button shop-list__button">9 900 руб.</a>
+            <a href="" class="link button shop-list__button">9 900 руб.</a>
           </div>
         </li>
         <li class="shop-list__item">
-          <a href="#" class="shop-list__link">
-            <img src="" alt="Макет Кваст" class="shop-list__image" width="" height="">
+          <a href="#" class="link shop-list__link">
+            <img src="" alt="Макет Кваст" class="image shop-list__image" width="" height="">
           </a>
           <div class="shop-list__description">
             <b class="shop-list__title">Кваст</b>
             <span class="shop-list__text">Промо-сайт производителя крафтового кваса</span>
-            <a href="" class="button shop-list__button">9 900 руб.</a>
+            <a href="" class="link button shop-list__button">9 900 руб.</a>
           </div>
         </li>
       </ul>
 
-      <ul class="paginator">
+      <ul class="paginator catalog__paginator">
         <li class="paginator__item visually-hidden">
-          <a href="#" class="paginator__link">Предыдущая</a>
+          <a href="#" class="link paginator__link">Предыдущая</a>
         </li>
         <li class="paginator__item">
-          <a href="#" class="paginator__link paginator__link--current">1</a>
+          <a href="#" class="link paginator__link paginator__link--current">1</a>
         </li>
         <li class="paginator__item">
-          <a href="#" class="paginator__link">2</a>
+          <a href="#" class="link paginator__link">2</a>
         </li>
         <li class="paginator__item">
-          <a href="#" class="paginator__link">3</a>
+          <a href="#" class="link paginator__link">3</a>
         </li>
         <li class="paginator__item">
-          <a href="#" class="paginator__link">Следующая</a>
+          <a href="#" class="link paginator__link">Следующая</a>
         </li>
       </ul>
     </section>
 
-    <section class="map">
-      <h2 class="visually-hidden">Веб студия Nerds на карте</h2>
-      <img src="" alt="" class="map__image">
-    </section>
+    <div class="adress page-main__item">
+      <section class="map adress__map">
+        <h2 class="visually-hidden">Веб студия Nerds на карте</h2>
+        <img src="" alt="Веб студия Nerds на карте" class="image map__image" width="" height="">
+      </section>
 
-    <section class="contacts">
-      <h2 class="contacts__title">NЁRDS DESIGN STUDIO</h2>
-      <p class="contacts__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <span class="contacts__tel">тел. +7 (812) 275-75-75</span>
-      <button class="button contacts__button" type="button">Напишите нам</button>
-    </section>
+      <section class="contacts adress__contacts">
+        <h2 class="contacts__title">NЁRDS DESIGN STUDIO</h2>
+        <p class="contacts__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <span class="contacts__tel">тел. +7 (812) 275-75-75</span>
+        <a href="feedback.html" class="link button contacts__button">Напишите нам</a>
+      </section>
+    </div>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__social social">
+    <div class="social page-footer__social">
       <span class="visually-hidden">Nerds в соцсетях</span>
       <ul class="social__list">
         <li class="social__item social__item--vkontakte">
-          <a href="#" class="social__link"><span class="visually-hidden">Вконтакте</span></a>
+          <a href="#" class="link social__link"><span class="visually-hidden">Вконтакте</span></a>
         </li>
         <li class="social__item social__item--favebook">
-          <a href="" class="social__link"><span class="visually-hidden">Facebook</span></a>
+          <a href="" class="link social__link"><span class="visually-hidden">Facebook</span></a>
         </li>
         <li class="social__item social__item--instagram">
-          <a href="" class="social__link"><span class="visually-hidden">Instagram</span></a>
+          <a href="" class="link social__link"><span class="visually-hidden">Instagram</span></a>
         </li>
       </ul>
     </div>
 
-    <div class="page-footer__slogan slogan">
+    <div class="slogan page-footer__slogan">
       <b class="slogan__text slogan__text--big">Давайте дружить, это выгодно!</b>
       <span class="slogan__text">Скидка 10% для друзей из социальных сетей.</span>
     </div>
@@ -245,18 +250,18 @@
 
   <section class="feedback-popup">
     <h2 class="feedback-popup__title">Напишите нам</h2>
-    <form action="#" method="post" class="feedback-popup__form feedback-form">
-      <p class="feedback-form__name">
-        <label for="name" class="feedback-form__label">Ваше имя:</label>
-        <input type="text" class="feedback-form__input" name="name" id="name" placeholder="Представтесь, пожалуйста">
+    <form action="#" method="post" class="feedback-form feedback-popup__form">
+      <p class="input feedback-form__name">
+        <label for="name" class="input__label">Ваше имя:</label>
+        <input type="text" class="input__field" name="name" id="name" placeholder="Представтесь, пожалуйста">
       </p>
-      <p class="feedback-form__email">
-        <label for="email" class="feedback-form__label">Ваш e-mail:</label>
-        <input type="email" class="feedback-form__input" name="email" id="email" placeholder="Для отправки ответа">
+      <p class="input feedback-form__email">
+        <label for="email" class="input__label">Ваш e-mail:</label>
+        <input type="email" class="finput__field" name="email" id="email" placeholder="Для отправки ответа">
       </p>
-      <p class="feedback-form__text">
-        <label for="text" class="feedback-form__label">Текст письма:</label>
-        <textarea name="text" id="text" cols="30" rows="5" class="feedback-form__textarea" placeholder="В свободной форме"></textarea>
+      <p class="textarea feedback-form__text">
+        <label for="text" class="textarea__label">Текст письма:</label>
+        <textarea name="text" id="text" cols="30" rows="5" class="textarea__field" placeholder="В свободной форме"></textarea>
       </p>
       <button class="button feedback-form__button" type="submit">Отправить</button>
     </form>
