@@ -1,0 +1,25 @@
+.about-us {
+  &__title {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+  }
+
+  &__list-title {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &__list {
+    @include reset-style-list;
+  }
+
+  &__item::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 2px;
+    vertical-align: middle;
+    background-color: $red;
+  }
+}

@@ -1,0 +1,93 @@
+.suggestions {
+  @include content-box;
+  min-height: 345px;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+
+    background-color: $gray-lighten;
+    background-clip: padding-box;
+  }
+
+  &__list {
+    @include reset-style-list;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    padding: 80px 0;
+  }
+
+  &__item {
+    width: 300px;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  &__item::before {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 145px;
+  }
+
+  &__item--site::before {
+    background-color: $red;
+    background-image: url("../img/sites.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
+  &__item--app::before {
+    background-color: $green;
+    background-image: url("../img/apps.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
+  &__item--presentation::before {
+    background-color: $yellow;
+    background-image: url("../img/presentations.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
+  &__button {
+    @include reset-style-link;
+
+    display: inline-block;
+    padding: 17px 40px;
+    color: #ffffff;
+
+    &--green {
+      background-color: $green;
+    }
+
+    &--green:hover {
+      background-color: $green-dark;
+    }
+
+    &--green:active {
+      background-color: $green-darken;
+    }
+
+    &--yellow {
+      background-color: $yellow;
+    }
+
+    &--yellow:hover {
+      background-color: $yellow-dark;
+    }
+
+    &--yellow:active {
+      background-color: $yellow-darken;
+    }
+  }
+}

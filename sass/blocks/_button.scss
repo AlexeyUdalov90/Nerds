@@ -1,0 +1,16 @@
+.button {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: $red;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: $red-dark;
+  }
+
+  &:active {
+    background-color: $red-darken;
+  }
+}

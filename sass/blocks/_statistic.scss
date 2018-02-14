@@ -1,0 +1,24 @@
+.statistic {
+  padding-top: 40px;
+
+  &__caption {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__number {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+  }
+
+  &__percent {
+    font-size: 24px;
+    line-height: 24px;
+    vertical-align: super;
+  }
+
+  &__text {
+    line-height: 18px;
+  }
+}

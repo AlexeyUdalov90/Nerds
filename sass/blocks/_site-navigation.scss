@@ -1,0 +1,14 @@
+.site-navigation {
+  @include reset-style-list;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &__link {
+    @include reset-style-link;
+
+    display: block;
+    padding: 10px 25px;
+  }
+}
