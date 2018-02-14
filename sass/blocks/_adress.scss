@@ -1,0 +1,52 @@
+.adress {
+  position: relative;
+  min-height: 415px;
+  margin-bottom: 70px;
+  overflow: hidden;
+
+  &__map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &__image {
+    position: relative;
+    top: -150px;
+  }
+
+  &__wrapper {
+    @include content-box;
+  }
+
+  &__contacts {
+    width: 220px;
+    padding: 47px 50px 50px;
+    margin-top: 54px;
+
+    background-color: #ffffff;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 18px;
+  }
+
+  &__button {
+    @include reset-style-link;
+    display: block;
+    padding: 18px 0;
+    margin-top: 35px;
+
+    text-align: center;
+    color: #ffffff;
+  }
+}

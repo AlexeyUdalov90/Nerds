@@ -1,0 +1,30 @@
+.social {
+  &__list {
+    @include reset-style-list;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  &__item {
+    margin-right: 12px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: flex;
+    width: 80px;
+    height: 80px;
+
+    background-color: $gray-light;
+    border-radius: 50%;
+  }
+
+  &__logo {
+    margin: auto;
+  }
+}

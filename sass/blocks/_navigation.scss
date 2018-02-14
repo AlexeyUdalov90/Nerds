@@ -1,0 +1,16 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  &__logo {
+    width: 160px;
+    height: 65px;
+  }
+}

@@ -1,0 +1,26 @@
+.page-footer {
+  @include content-box;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+
+  &__invite {
+    order: 2;
+  }
+
+  &__social {
+    order: 1;
+    margin-right: 140px;
+  }
+
+  &__text {
+    line-height: 22px;
+
+    &--big {
+      font-size: 36px;
+      line-height: 36px;
+      font-weight: 700;
+    }
+  }
+}

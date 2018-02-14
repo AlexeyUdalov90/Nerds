@@ -1,0 +1,30 @@
+.projects {
+  @include content-box;
+
+  margin-bottom: 80px;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+
+    background-color: $gray-lighten;
+    background-clip: padding-box;
+  }
+
+  &__list {
+    @include reset-style-list;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 25px 0;
+  }
+
+  &__item {
+    filter: opacity(0.2);
+  }
+}

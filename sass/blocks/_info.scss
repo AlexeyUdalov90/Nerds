@@ -1,0 +1,14 @@
+.info {
+  @include content-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__about-us {
+    flex-basis: 700px;
+  }
+
+  &__statistic {
+    flex-basis: 360px;
+  }
+}

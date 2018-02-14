@@ -1,0 +1,26 @@
+.user-navigation {
+  @include reset-style-list;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &__link {
+    @include reset-style-link;
+
+    display: block;
+    padding: 10px 25px;
+
+    &--basket::before {
+      content: "";
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      padding-right: 25px;
+
+      background-image: url("../img/basket.svg");
+      background-repeat: no-repeat;
+      background-position: top left;
+    }
+  }
+}
