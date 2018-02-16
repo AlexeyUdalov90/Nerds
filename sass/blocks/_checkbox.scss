@@ -1,0 +1,23 @@
+.checkbox {
+  &__control {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-right: 13px;
+    vertical-align: top;
+
+    border: 2px solid $checkbox-color;
+    border-radius: 3px;
+
+    &--checked::before {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 6px;
+
+      border-left: 4px solid $checkbox-color;
+      border-bottom: 4px solid $checkbox-color;
+      transform: translate(3px, 2px) rotate(-45deg);
+    }
+  }
+}

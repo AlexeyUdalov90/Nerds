@@ -427,14 +427,7 @@ template {
   background-color: white; }
   .page-body__header {
     padding-top: 50px; }
-  .page-body__slider {
-    margin-bottom: 80px;
-    background-color: #ececec; }
-  .page-body__info {
-    margin-bottom: 73px; }
-  .page-body__projects {
-    margin-bottom: 80px; }
-  .page-body__adress {
+  .page-body__main {
     margin-bottom: 70px; }
   .page-body__footer {
     padding-bottom: 70px; }
@@ -554,7 +547,8 @@ template {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 600px; }
+  width: 600px;
+  margin-right: 40px; }
   .site-navigation__link {
     color: inherit;
     text-decoration: none;
@@ -594,6 +588,47 @@ template {
       background-image: url("../img/basket.svg");
       background-repeat: no-repeat;
       background-position: top left; }
+
+.page-main__slider {
+  margin-bottom: 80px;
+  background-color: #ececec; }
+
+.page-main__info {
+  margin-bottom: 73px; }
+
+.page-main__projects {
+  margin-bottom: 80px; }
+
+.page-main__adress {
+  margin-bottom: 70px; }
+
+.page-main__box-title {
+  margin-bottom: 55px;
+  background-color: #ececec; }
+
+.page-main__wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px; }
+  .page-main__wrapper--catalog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+
+.page-main__title {
+  margin: 0;
+  padding-top: 80px;
+  padding-bottom: 105px;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: center; }
 
 .slider {
   position: relative; }
@@ -847,6 +882,109 @@ template {
   height: 110px;
   opacity: 0.2; }
 
+.filter-form {
+  width: 260px; }
+  .filter-form__title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase; }
+    .filter-form__title--cost {
+      margin-bottom: 50px; }
+  .filter-form__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 40px; }
+    .filter-form__list--features {
+      margin-bottom: 45px; }
+  .filter-form__item:not(:last-child) {
+    margin-bottom: 17px; }
+  .filter-form__button {
+    width: 100%;
+    padding: 15px 0;
+    color: black;
+    background-color: #ececec; }
+
+.range {
+  margin-bottom: 55px; }
+  .range__box {
+    position: relative;
+    width: 260px;
+    height: 80px;
+    background-color: #ececec;
+    border-radius: 3px; }
+  .range__line {
+    position: absolute;
+    top: 39px;
+    left: 20px;
+    width: 220px;
+    height: 2px;
+    background-image: linear-gradient(to right, #00ca10 150px, #d7dcde 150px); }
+    .range__line::before, .range__line::after {
+      content: "";
+      position: absolute;
+      top: -9px;
+      width: 4px;
+      height: 4px;
+      background: #ababab;
+      border: 8px solid #ffffff;
+      border-radius: 50%;
+      -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+              box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+      cursor: pointer; }
+    .range__line::before {
+      left: -10px; }
+    .range__line::after {
+      right: 60px; }
+  .range__text {
+    margin: 0;
+    margin-top: 14px;
+    line-height: 22px;
+    text-transform: uppercase; }
+  .range__number {
+    display: inline-block;
+    width: 80px;
+    margin-left: 10px;
+    padding: 8px 0;
+    text-align: center;
+    background-color: #ececec;
+    border-radius: 3px; }
+    .range__number:first-of-type {
+      margin-right: 23px; }
+
+.radio__control {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  padding: 4px;
+  margin-right: 10px;
+  vertical-align: top;
+  background-clip: content-box;
+  border: 4px solid #a6a6a6;
+  border-radius: 50%; }
+  .radio__control--checked {
+    background-color: #a6a6a6; }
+
+.checkbox__control {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin-right: 13px;
+  vertical-align: top;
+  border: 2px solid #a6a6a6;
+  border-radius: 3px; }
+  .checkbox__control--checked::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 6px;
+    border-left: 4px solid #a6a6a6;
+    border-bottom: 4px solid #a6a6a6;
+    -webkit-transform: translate(3px, 2px) rotate(-45deg);
+            transform: translate(3px, 2px) rotate(-45deg); }
+
 .adress {
   position: relative;
   min-height: 415px;
@@ -996,6 +1134,8 @@ template {
     width: 21px;
     height: 21px;
     background: none; }
+  .feedback-popup__close-cross {
+    fill: rgba(251, 86, 90, 0.3); }
 
 .feedback-form {
   width: 760px; }
