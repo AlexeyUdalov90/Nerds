@@ -1,7 +1,6 @@
 .adress {
   position: relative;
   min-height: 415px;
-  margin-bottom: 70px;
   overflow: hidden;
 
   &__map {
@@ -22,8 +21,9 @@
 
   &__contacts {
     width: 220px;
-    padding: 47px 50px 50px;
     margin-top: 54px;
+    padding: 50px;
+    padding-bottom: 47px;
 
     background-color: #ffffff;
   }
@@ -37,13 +37,14 @@
     margin: 0;
     padding: 0;
     margin-top: 20px;
-    margin-bottom: 18px;
+    margin-bottom: 5px;
   }
 
   &__button {
     @include reset-style-link;
+
     display: block;
-    padding: 18px 0;
+    padding: 15px 0;
     margin-top: 35px;
 
     text-align: center;

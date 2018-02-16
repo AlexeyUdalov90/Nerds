@@ -8,7 +8,7 @@
   }
 
   &__item {
-    margin-right: 12px;
+    margin-right: 10px;
 
     &:last-child {
       margin-right: 0;
@@ -22,6 +22,37 @@
 
     background-color: $gray-light;
     border-radius: 50%;
+
+    &::before {
+      content: "";
+      display: block;
+      margin: auto;
+
+      background-color: $gray-light;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &--vkontakte::before {
+      width: 26px;
+      height: 15px;
+
+      background-image: url("../img/vk-icon.svg");
+    }
+
+    &--facebook::before {
+      width: 12px;
+      height: 22px;
+
+      background-image: url("../img/fb-icon.svg");
+    }
+
+    &--instagram::before {
+      width: 21px;
+      height: 21px;
+
+      background-image: url("../img/insta-icon.svg");
+    }
   }
 
   &__logo {

@@ -14,10 +14,27 @@
   background-color: $page-background;
 
   &__header {
-    padding-top: 49px;
+    padding-top: 50px;
   }
 
   &__slider {
+    margin-bottom: 80px;
     background-color: $slider-bg;
+  }
+
+  &__info {
+    margin-bottom: 73px;
+  }
+
+  &__projects {
+    margin-bottom: 80px;
+  }
+
+  &__adress {
+    margin-bottom: 70px;
+  }
+
+  &__footer {
+    padding-bottom: 70px;
   }
 }

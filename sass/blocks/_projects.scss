@@ -1,16 +1,16 @@
 .projects {
-  @include content-box;
+  &__wrapper {
+    @include content-box;
 
-  margin-bottom: 80px;
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      height: 2px;
 
-  &::before,
-  &::after {
-    content: "";
-    display: block;
-    height: 2px;
-
-    background-color: $gray-lighten;
-    background-clip: padding-box;
+      background-color: $gray-lighten;
+      background-clip: padding-box;
+    }
   }
 
   &__list {
@@ -21,10 +21,13 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    padding: 25px 0;
+    padding: 35px 0;
   }
 
   &__item {
-    filter: opacity(0.2);
+    width: 260px;
+    height: 110px;
+
+    opacity: 0.2;
   }
 }

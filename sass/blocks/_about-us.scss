@@ -1,8 +1,17 @@
 .about-us {
   &__title {
+    margin: 0;
+    margin-top: 73px;
+    margin-bottom: 35px;
+
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 40px;
   }
 
   &__list-title {
@@ -12,6 +21,11 @@
 
   &__list {
     @include reset-style-list;
+    margin-top: 20px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 25px;
   }
 
   &__item::before {
@@ -19,7 +33,9 @@
     display: inline-block;
     width: 25px;
     height: 2px;
+    margin-right: 10px;
     vertical-align: middle;
+
     background-color: $red;
   }
 }
