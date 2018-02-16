@@ -1,0 +1,44 @@
+.page-main {
+  &__slider {
+    margin-bottom: 80px;
+    background-color: $slider-bg;
+  }
+
+  &__info {
+    margin-bottom: 73px;
+  }
+
+  &__projects {
+    margin-bottom: 80px;
+  }
+
+  &__adress {
+    margin-bottom: 70px;
+  }
+
+  &__box-title {
+    margin-bottom: 55px;
+    background-color: $gray-lighten;
+  }
+
+  &__wrapper {
+    @include content-box;
+
+    &--catalog {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 105px;
+
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    text-align: center;
+  }
+}

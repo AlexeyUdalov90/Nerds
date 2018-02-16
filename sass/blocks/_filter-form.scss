@@ -1,0 +1,39 @@
+.filter-form {
+  width: 260px;
+
+  &__title {
+    margin-bottom: 10px;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &--cost {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__list {
+    @include reset-style-list;
+
+    margin-bottom: 40px;
+
+    &--features {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 17px;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 15px 0;
+
+    color: $text-cl;
+
+    background-color: $form-button-background;
+  }
+}
