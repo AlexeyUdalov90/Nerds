@@ -2,14 +2,16 @@
   @include reset-style-list;
 
   display: flex;
+  justify-content: flex-end;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 160px;
 
   &__link {
     @include reset-style-link;
 
     display: block;
-    padding: 10px 25px;
+    padding: 10px 0;
 
     &--basket::before {
       content: "";
@@ -17,6 +19,7 @@
       width: 15px;
       height: 15px;
       padding-right: 25px;
+      vertical-align: baseline;
 
       background-image: url("../img/basket.svg");
       background-repeat: no-repeat;

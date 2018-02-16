@@ -1,4 +1,6 @@
 .slider {
+  position: relative;
+
   &__wrapper {
     @include content-box;
   }
@@ -7,27 +9,86 @@
     @include reset-style-list;
 
     position: relative;
-    min-height: 425px;
+    min-height: 430px;
   }
 
   &__item {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    padding-top: 80px;
+
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    &--first {
+      background-image: url("../img/slide-1.png");
+    }
+
+    &--second {
+      background-image: url("../img/slide-2.png");
+    }
+
+    &--third {
+      background-image: url("../img/slide-3.png");
+    }
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__content {
+    width: 510px;
   }
 
   &__title {
+    margin: 0;
+    margin-bottom: 25px;
+
     font-size: 55px;
     line-height: 55px;
     font-weight: 400;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 38px;
   }
 
   &__button {
     @include reset-style-link;
 
     display: inline-block;
-    padding: 18px 55px;
+    padding: 16px 55px;
+    margin-bottom: 79px;
 
     color: #ffffff;
+  }
+
+  &__control {
+    position: absolute;
+    left: 600px;
+    bottom: 95px;
+    z-index: 10;
+  }
+
+  &__toggle {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    margin-right: 25px;
+    box-sizing: border-box;
+
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #ffffff;
+
+    &--active {
+      border-color: $gray-dark;
+    }
   }
 }

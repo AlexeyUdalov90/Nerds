@@ -1,12 +1,23 @@
 .statistic {
   padding-top: 40px;
 
+  &__logo {
+    margin-bottom: 30px;
+  }
+
   &__caption {
+    margin-bottom: 43px;
+
     font-weight: 700;
     text-transform: uppercase;
   }
 
+  &__table {
+    border-collapse: collapse;
+  }
+
   &__number {
+    width: 120px;
     font-size: 45px;
     font-weight: 700;
     line-height: 45px;
@@ -19,6 +30,8 @@
   }
 
   &__text {
+    padding-top: 13px;
+
     line-height: 18px;
   }
 }

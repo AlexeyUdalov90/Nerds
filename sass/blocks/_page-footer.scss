@@ -1,12 +1,15 @@
 .page-footer {
-  @include content-box;
+  &__wrapper {
+    @include content-box;
 
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
 
   &__invite {
     order: 2;
+    margin-top: 10px;
   }
 
   &__social {
@@ -19,7 +22,7 @@
 
     &--big {
       font-size: 36px;
-      line-height: 36px;
+      line-height: 40px;
       font-weight: 700;
     }
   }

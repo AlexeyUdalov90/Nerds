@@ -1,16 +1,47 @@
 .button {
+  padding: 0;
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
 
-  background-color: $red;
+  border: none;
   border-radius: 3px;
 
-  &:hover {
-    background-color: $red-dark;
+  cursor: pointer;
+
+  &--color-red {
+    background-color: $red;
+
+    &:hover {
+      background-color: $red-dark;
+    }
+
+    &:active {
+      background-color: $red-darken;
+    }
   }
 
-  &:active {
-    background-color: $red-darken;
+  &--color-green {
+    background-color: $green;
+
+    &:hover {
+      background-color: $green-dark;
+    }
+
+    &:active {
+      background-color: $green-darken;
+    }
+  }
+
+  &--color-yellow {
+    background-color: $yellow;
+
+    &:hover {
+      background-color: $yellow-dark;
+    }
+
+    &:active {
+      background-color: $yellow-darken;
+    }
   }
 }

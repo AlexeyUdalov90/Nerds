@@ -1,0 +1,25 @@
+.feedback-form {
+  width: 760px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-bottom: 15px;
+  }
+
+  &__name,
+  &__email {
+    flex-basis: 360px;
+  }
+
+  &__text {
+    flex-grow: 1;
+  }
+
+  &__button {
+    padding: 15px 80px;
+  }
+}

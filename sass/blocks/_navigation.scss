@@ -1,6 +1,6 @@
 .navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-end;
   flex-direction: row;
   flex-wrap: wrap;
@@ -12,5 +12,10 @@
   &__logo {
     width: 160px;
     height: 65px;
+    margin-right: 200px;
+  }
+
+  &__site-list {
+    margin-right: 40px;
   }
 }

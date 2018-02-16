@@ -1,8 +1,10 @@
 .info {
-  @include content-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  &__wrapper {
+    @include content-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   &__about-us {
     flex-basis: 700px;

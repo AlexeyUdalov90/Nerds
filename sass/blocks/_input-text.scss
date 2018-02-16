@@ -1,0 +1,29 @@
+.input-text {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  margin-bottom: 30px;
+
+  &__label {
+    font-weight: 700;
+  }
+
+  &__field {
+    padding: 10px;
+
+    font: inherit;
+
+    border: 2px solid $gray;
+    border-radius: 3px;
+
+    &::placeholder {
+      font: inherit;
+      color: rgba($black-light, 0.5);
+    }
+
+    &--textarea {
+      resize: none;
+    }
+  }
+}
