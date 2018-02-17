@@ -2,46 +2,20 @@
   padding: 0;
   line-height: 18px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $text-button-color;
 
   border: none;
   border-radius: 3px;
-
+  background-color: $site-button-background;
   cursor: pointer;
 
-  &--color-red {
-    background-color: $red;
-
-    &:hover {
-      background-color: $red-dark;
-    }
-
-    &:active {
-      background-color: $red-darken;
-    }
+  &:hover {
+    background-color: $site-button-hover-background;
   }
 
-  &--color-green {
-    background-color: $green;
-
-    &:hover {
-      background-color: $green-dark;
-    }
-
-    &:active {
-      background-color: $green-darken;
-    }
-  }
-
-  &--color-yellow {
-    background-color: $yellow;
-
-    &:hover {
-      background-color: $yellow-dark;
-    }
-
-    &:active {
-      background-color: $yellow-darken;
-    }
+  &:active {
+    color: rgba($text-button-color, 0.3);
+    box-shadow: inset 0 3px 0 0 rgba(#000000, 0.1);
+    background-color: $site-button-click-background;
   }
 }

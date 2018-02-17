@@ -70,5 +70,29 @@
     display: inline-block;
     padding: 15px 40px;
     color: #ffffff;
+
+    &--app {
+      background-color: $app-button-background;
+
+      &:hover {
+        background-color: $app-button-hover-background;
+      }
+
+      &:active {
+        background-color: $app-button-click-background;
+      }
+    }
+
+    &--presentation {
+      background-color: $presentation-button-background;
+
+      &:hover {
+        background-color: $presentation-button-hover-background;
+      }
+
+      &:active {
+        background-color: $presentation-button-click-background;
+      }
+    }
   }
 }

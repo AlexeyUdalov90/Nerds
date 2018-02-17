@@ -23,12 +23,23 @@
     background-color: $gray-light;
     border-radius: 50%;
 
+    &:hover {
+      background-color: $site-button-hover-background;
+    }
+
+    &:active {
+      background-color: $site-button-click-background;
+
+      &::before {
+        opacity: 0.3;
+      }
+    }
+
     &::before {
       content: "";
       display: block;
       margin: auto;
 
-      background-color: $gray-light;
       background-repeat: no-repeat;
       background-position: 0 0;
     }

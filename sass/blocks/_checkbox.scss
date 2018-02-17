@@ -1,4 +1,6 @@
 .checkbox {
+  cursor: pointer;
+
   &__control {
     display: inline-block;
     width: 19px;
@@ -8,6 +10,7 @@
 
     border: 2px solid $checkbox-color;
     border-radius: 3px;
+    opacity: 0.4;
 
     &--checked::before {
       content: "";
@@ -18,6 +21,10 @@
       border-left: 4px solid $checkbox-color;
       border-bottom: 4px solid $checkbox-color;
       transform: translate(3px, 2px) rotate(-45deg);
+    }
+
+    &:hover {
+      opacity: 1;
     }
   }
 }

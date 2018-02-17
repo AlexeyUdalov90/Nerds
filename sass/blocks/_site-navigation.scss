@@ -4,14 +4,12 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 600px;
+  margin-bottom: 10px;
   margin-right: 40px;
 
   &__link {
     @include reset-style-link;
 
-    display: block;
-    padding: 10px 0;
     margin-right: 47px;
   }
 }
