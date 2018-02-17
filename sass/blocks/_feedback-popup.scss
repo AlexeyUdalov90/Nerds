@@ -29,9 +29,19 @@
     height: 21px;
 
     background: none;
-  }
+    opacity: 0.3;
+    outline: none;
 
-  &__close-cross {
-    fill: rgba($red, 0.3);
+    &:hover,
+    &:focus {
+      opacity: 1;
+      background: none;
+    }
+
+    &:active {
+      opacity: 0.1;
+      background: none;
+      box-shadow: none;
+    }
   }
 }

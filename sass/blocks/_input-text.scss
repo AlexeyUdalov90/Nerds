@@ -5,6 +5,8 @@
   margin: 0;
   margin-bottom: 30px;
 
+  color: $input-text-color;
+
   &__label {
     font-weight: 700;
   }
@@ -14,12 +16,25 @@
 
     font: inherit;
 
-    border: 2px solid $gray;
+    border: 2px solid $input-border-color;
     border-radius: 3px;
 
     &::placeholder {
       font: inherit;
-      color: rgba($black-light, 0.5);
+      color: rgba($input-text-color, 0.5);
+    }
+
+    &:invalid {
+      color: $invalid-value-color;
+      border-color: $invalid-value-color;
+    }
+
+    &:hover {
+      border-color: $input-hover-border-color;
+    }
+
+    &:focus {
+      border-color: $input-focus-border-color;
     }
 
     &--textarea {

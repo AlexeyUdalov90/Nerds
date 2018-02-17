@@ -5,13 +5,10 @@
   justify-content: flex-end;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 160px;
+  margin-bottom: 10px;
 
   &__link {
     @include reset-style-link;
-
-    display: block;
-    padding: 10px 0;
 
     &--basket::before {
       content: "";

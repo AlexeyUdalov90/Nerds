@@ -24,10 +24,20 @@
     padding: 35px 0;
   }
 
-  &__item {
+  &__link {
+    @include reset-style-link;
+
     width: 260px;
     height: 110px;
 
     opacity: 0.2;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 }
