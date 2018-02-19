@@ -43,195 +43,197 @@
     </div>
 
     <div class="shop page-main__shop">
-      <section class="shop__filter">
-        <h2 class="visually-hidden">Фильтр</h2>
-        <form action="#" method="get" class="filter-form">
-          <fildset class="filter-form__cost">
-            <legend class="filter-form__title filter-form__title--cost">Стоимость:</legend>
-            <div class="range filter-form__range">
-              <div class="range__box">
-                <div class="range__line"></div>
+      <div class="shop__wrapper">
+        <section class="shop__filter">
+          <h2 class="visually-hidden">Фильтр</h2>
+          <form action="#" method="get" class="filter-form">
+            <fildset class="filter-form__cost">
+              <legend class="filter-form__title filter-form__title--cost">Стоимость:</legend>
+              <div class="range filter-form__range">
+                <div class="range__box">
+                  <div class="range__line"></div>
+                </div>
+                <p class="range__text">
+                  от <span class="range__number">0</span>
+                  до <span class="range__number">15 000</span>
+                </p>
               </div>
-              <p class="range__text">
-                от <span class="range__number">0</span>
-                до <span class="range__number">15 000</span>
-              </p>
-            </div>
-          </fildset>
-          <fildset class="filter-form__grid">
-            <legend class="filter-form__title">Сетка:</legend>
-            <ul class="filter-form__list">
-              <li class="filter-form__item">
-                <label class="radio">
-                  <input type="radio" class="visually-hidden" name="grid" value="adaptive" checked>
-                  <span class="radio__control radio__control--checked"></span>Адаптивная
-                </label>
-              </li>
-              <li class="filter-form__item">
-                <label class="radio">
-                  <input type="radio" class="visually-hidden" name="grid" value="fixed">
-                  <span class="radio__control"></span>Фиксированная
-                </label>
-              </li>
-              <li class="filter-form__item">
-                <label class="radio">
-                  <input type="radio" class="visually-hidden" name="grid" value="rubber">
-                  <span class="radio__control"></span>Резиновая
-                </label>
-              </li>
-            </ul>
-          </fildset>
-          <fildset class="filter-form__features">
-            <legend class="filter-form__title">Особенности:</legend>
-            <ul class="filter-form__list filter-form__list--features">
-              <li class="filter-form__item">
-                <label class="checkbox">
-                  <input type="checkbox" class="visually-hidden" name="slider" checked>
-                  <span class="checkbox__control checkbox__control--checked"></span>Слайдер
-                </label>
-              </li>
-              <li class="filter-form__item">
-                <label class="checkbox">
-                  <input type="checkbox" class="visually-hidden" name="pluses">
-                  <span class="checkbox__control"></span>Блок преимущества
-                </label>
-              </li>
-              <li class="filter-form__item">
-                <label class="checkbox">
-                  <input type="checkbox" class="visually-hidden" name="news" checked>
-                  <span class="checkbox__control checkbox__control--checked"></span>Новости
-                </label>
-              </li>
-              <li class="filter-form__item">
-                <label class="checkbox">
-                  <input type="checkbox" class="visually-hidden" name="gallery">
-                  <span class="checkbox__control"></span>Галерея
-                </label>
-              </li>
-              <li class="filter-form__item">
-                <label class="checkbox">
-                  <input type="checkbox" class="visually-hidden" name="basket">
-                  <span class="checkbox__control"></span>Корзина
-                </label>
-              </li>
-            </ul>
-          </fildset>
-          <button class="button filter-form__button" type="submit">Показать</button>
-        </form>
-      </section>
-
-      <div class="shop__content">
-        <section class="sorting shop__sorting">
-          <h2 class="sorting__title">Сортировать:</h2>
-          <ul class="sorting__list">
-            <li class="sorting__item"><a href="#" class="sorting__link sorting__link--current">По цене</a></li>
-            <li class="sorting__item"><a href="#" class="sorting__link">По типу</a></li>
-            <li class="sorting__item"><a href="#" class="sorting__link">По названию</a></li>
-            <li class="sorting__item">
-              <a href="#" class="sorting__link sorting__link--current sorting__link--wane"><span class="visually-hidden">По возрастанию</span></a>
-            </li>
-            <li class="sorting__item">
-              <a href="#" class="sorting__link sorting__link--growth"><span class="visually-hidden">По убыванию</span></a>
-            </li>
-          </ul>
+            </fildset>
+            <fildset class="filter-form__grid">
+              <legend class="filter-form__title">Сетка:</legend>
+              <ul class="filter-form__list">
+                <li class="filter-form__item">
+                  <label class="radio">
+                    <input type="radio" class="visually-hidden" name="grid" value="adaptive" checked>
+                    <span class="radio__control radio__control--checked"></span>Адаптивная
+                  </label>
+                </li>
+                <li class="filter-form__item">
+                  <label class="radio">
+                    <input type="radio" class="visually-hidden" name="grid" value="fixed">
+                    <span class="radio__control radio__control--checked"></span>Фиксированная
+                  </label>
+                </li>
+                <li class="filter-form__item">
+                  <label class="radio">
+                    <input type="radio" class="visually-hidden" name="grid" value="rubber">
+                    <span class="radio__control radio__control--checked"></span>Резиновая
+                  </label>
+                </li>
+              </ul>
+            </fildset>
+            <fildset class="filter-form__features">
+              <legend class="filter-form__title">Особенности:</legend>
+              <ul class="filter-form__list filter-form__list--features">
+                <li class="filter-form__item">
+                  <label class="checkbox">
+                    <input type="checkbox" class="visually-hidden" name="slider" checked>
+                    <span class="checkbox__control checkbox__control--checked"></span>Слайдер
+                  </label>
+                </li>
+                <li class="filter-form__item">
+                  <label class="checkbox">
+                    <input type="checkbox" class="visually-hidden" name="pluses">
+                    <span class="checkbox__control"></span>Блок преимущества
+                  </label>
+                </li>
+                <li class="filter-form__item">
+                  <label class="checkbox">
+                    <input type="checkbox" class="visually-hidden" name="news" checked>
+                    <span class="checkbox__control checkbox__control--checked"></span>Новости
+                  </label>
+                </li>
+                <li class="filter-form__item">
+                  <label class="checkbox">
+                    <input type="checkbox" class="visually-hidden" name="gallery">
+                    <span class="checkbox__control"></span>Галерея
+                  </label>
+                </li>
+                <li class="filter-form__item">
+                  <label class="checkbox">
+                    <input type="checkbox" class="visually-hidden" name="basket">
+                    <span class="checkbox__control"></span>Корзина
+                  </label>
+                </li>
+              </ul>
+            </fildset>
+            <button class="button filter-form__button" type="submit">Показать</button>
+          </form>
         </section>
 
-        <section class="catalog shop__catalog">
-          <h2 class="visually-hidden">Список макетов</h2>
-          <ul class="shop-list shop__list">
-            <li class="shop-list__item">
-              <a href="#" class="shop-list__link">
-                <svg xmlns="http://www.w3.org/2000/svg" class="shop-list__browser-head" width="360" height="40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
-                <img src="img/sedona.jpg" alt="Макет Sedona" class="shop-list__image" width="360" height="576">
-              </a>
-              <div class="shop-list__description">
-                <b class="shop-list__title">Sedona</b>
-                <span class="shop-list__text">Информационный сайт для туристов</span>
-                <a href="#" class="button shop-list__button">9 900 руб.</a>
-              </div>
-            </li>
-            <li class="shop-list__item">
-              <a href="#" class="shop-list__link">
-                <svg xmlns="http://www.w3.org/2000/svg" class="shop-list__browser-head" width="360" height="40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
-                <img src="img/pink.jpg" alt="Макет Pink" class="shop-list__image" width="360" height="576">
-              </a>
-              <div class="shop-list__description">
-                <b class="shop-list__title">Pink app</b>
-                <span class="shop-list__text">Продуктовый лендинг приложения для iOS и Android</span>
-                <a href="#" class="button shop-list__button">9 900 руб.</a>
-              </div>
-            </li>
-            <li class="shop-list__item">
-              <a href="#" class="shop-list__link">
-                <svg xmlns="http://www.w3.org/2000/svg" class="shop-list__browser-head" width="360" height="40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
-                <img src="img/barbershop.jpg" alt="Макет Barbershop" class="shop-list__image" width="360" height="576">
-              </a>
-              <div class="shop-list__description">
-                <b class="shop-list__title">Barbershop</b>
-                <span class="shop-list__text">Сайт салоны красоты.Для мужчин, да.</span>
-                <a href="#" class="button shop-list__button">9 900 руб.</a>
-              </div>
-            </li>
-            <li class="shop-list__item">
-              <a href="#" class="shop-list__link">
-                <svg xmlns="http://www.w3.org/2000/svg" class="shop-list__browser-head" width="360" height="40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
-                <img src="img/mishka.jpg" alt="Макет Mishka" class="shop-list__image" width="360" height="576">
-              </a>
-              <div class="shop-list__description">
-                <b class="shop-list__title">Mishka</b>
-                <span class="shop-list__text">Интернет-магазин вязаных игрушек</span>
-                <a href="" class="button shop-list__button">9 900 руб.</a>
-              </div>
-            </li>
-            <li class="shop-list__item">
-              <a href="#" class="shop-list__link">
-                <svg xmlns="http://www.w3.org/2000/svg" class="shop-list__browser-head" width="360" height="40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
-                <img src="img/aplus.jpg" alt="Макет Plus" class="shop-list__image" width="360" height="576">
-              </a>
-              <div class="shop-list__description">
-                <b class="shop-list__title">A plus</b>
-                <span class="shop-list__text">Лендинг курсов повышения квалификации</span>
-                <a href="" class="button shop-list__button">9 900 руб.</a>
-              </div>
-            </li>
-            <li class="shop-list__item">
-              <a href="#" class="shop-list__link">
-                <svg xmlns="http://www.w3.org/2000/svg" class="shop-list__browser-head" width="360" height="40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
-                <img src="img/kvast.jpg" alt="Макет Кваст" class="shop-list__image" width="360" height="576">
-              </a>
-              <div class="shop-list__description">
-                <b class="shop-list__title">Кваст</b>
-                <span class="shop-list__text">Промо-сайт производителя крафтового кваса</span>
-                <a href="" class="button shop-list__button">9 900 руб.</a>
-              </div>
-            </li>
-          </ul>
+        <div class="shop__content">
+          <section class="sorting shop__sorting">
+            <h2 class="sorting__title">Сортировать:</h2>
+            <ul class="sorting__list">
+              <li class="sorting__item"><a href="#" class="sorting__link sorting__link--current">По цене</a></li>
+              <li class="sorting__item"><a href="#" class="sorting__link">По типу</a></li>
+              <li class="sorting__item"><a href="#" class="sorting__link">По названию</a></li>
+              <li class="sorting__item">
+                <a href="#" class="sorting__link sorting__link--current sorting__link--wane"><span class="visually-hidden">По возрастанию</span></a>
+              </li>
+              <li class="sorting__item">
+                <a href="#" class="sorting__link sorting__link--growth"><span class="visually-hidden">По убыванию</span></a>
+              </li>
+            </ul>
+          </section>
 
-          <ul class="paginator shop__paginator">
-            <li class="paginator__item visually-hidden">
-              <a href="#" class="paginator__link">Предыдущая</a>
-            </li>
-            <li class="paginator__item">
-              <a class="paginator__link paginator__link--page paginator__link--current">1</a>
-            </li>
-            <li class="paginator__item">
-              <a href="#" class="paginator__link paginator__link--page">2</a>
-            </li>
-            <li class="paginator__item">
-              <a href="#" class="paginator__link paginator__link--page">3</a>
-            </li>
-            <li class="paginator__item">
-              <a href="#" class="paginator__link">Следующая</a>
-            </li>
-          </ul>
+          <section class="catalog shop__catalog">
+            <h2 class="visually-hidden">Список макетов</h2>
+            <ul class="shop-list shop__list">
+              <li class="shop-list__item">
+                <a href="#" class="shop-list__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="shop-list__browser-head shop-list__browser-head--active" width="360" height="40" fill="#4D4D4D"><path d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                  <img src="img/sedona.jpg" alt="Макет Sedona" class="shop-list__image" width="360" height="576">
+                </a>
+                <div class="shop-list__description shop-list__description--active">
+                  <b class="shop-list__title">Sedona</b>
+                  <span class="shop-list__text">Информационный сайт для туристов</span>
+                  <a href="#" class="button shop-list__button" tabindex="-1">9 900 руб.</a>
+                </div>
+              </li>
+              <li class="shop-list__item">
+                <a href="#" class="shop-list__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="shop-list__browser-head" width="360" height="40" fill="#4D4D4D"><path d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                  <img src="img/pink.jpg" alt="Макет Pink" class="shop-list__image" width="360" height="576">
+                </a>
+                <div class="shop-list__description">
+                  <b class="shop-list__title">Pink app</b>
+                  <span class="shop-list__text">Продуктовый лендинг приложения для iOS и Android</span>
+                  <a href="#" class="button shop-list__button" tabindex="-1">9 900 руб.</a>
+                </div>
+              </li>
+              <li class="shop-list__item">
+                <a href="#" class="shop-list__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="shop-list__browser-head" width="360" height="40" fill="#4D4D4D"><path d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                  <img src="img/barbershop.jpg" alt="Макет Barbershop" class="shop-list__image" width="360" height="576">
+                </a>
+                <div class="shop-list__description">
+                  <b class="shop-list__title">Barbershop</b>
+                  <span class="shop-list__text">Сайт салоны красоты.Для мужчин, да.</span>
+                  <a href="#" class="button shop-list__button" tabindex="-1">9 900 руб.</a>
+                </div>
+              </li>
+              <li class="shop-list__item">
+                <a href="#" class="shop-list__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="shop-list__browser-head" width="360" height="40" fill="#4D4D4D"><path d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                  <img src="img/mishka.jpg" alt="Макет Mishka" class="shop-list__image" width="360" height="576">
+                </a>
+                <div class="shop-list__description">
+                  <b class="shop-list__title">Mishka</b>
+                  <span class="shop-list__text">Интернет-магазин вязаных игрушек</span>
+                  <a href="" class="button shop-list__button" tabindex="-1">9 900 руб.</a>
+                </div>
+              </li>
+              <li class="shop-list__item">
+                <a href="#" class="shop-list__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="shop-list__browser-head" width="360" height="40" fill="#4D4D4D"><path d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                  <img src="img/aplus.jpg" alt="Макет Plus" class="shop-list__image" width="360" height="576">
+                </a>
+                <div class="shop-list__description">
+                  <b class="shop-list__title">A plus</b>
+                  <span class="shop-list__text">Лендинг курсов повышения квалификации</span>
+                  <a href="" class="button shop-list__button" tabindex="-1">9 900 руб.</a>
+                </div>
+              </li>
+              <li class="shop-list__item">
+                <a href="#" class="shop-list__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="shop-list__browser-head" width="360" height="40" fill="#4D4D4D"><path d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                  <img src="img/kvast.jpg" alt="Макет Кваст" class="shop-list__image" width="360" height="576">
+                </a>
+                <div class="shop-list__description">
+                  <b class="shop-list__title">Кваст</b>
+                  <span class="shop-list__text">Промо-сайт производителя крафтового кваса</span>
+                  <a href="" class="button shop-list__button" tabindex="-1">9 900 руб.</a>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="paginator shop__paginator">
+              <li class="paginator__item visually-hidden">
+                <a href="#" class="paginator__link">Предыдущая</a>
+              </li>
+              <li class="paginator__item">
+                <a class="paginator__link paginator__link--page paginator__link--current">1</a>
+              </li>
+              <li class="paginator__item">
+                <a href="#" class="paginator__link paginator__link--page">2</a>
+              </li>
+              <li class="paginator__item">
+                <a href="#" class="paginator__link paginator__link--page">3</a>
+              </li>
+              <li class="paginator__item">
+                <a href="#" class="paginator__link">Следующая</a>
+              </li>
+            </ul>
+          </section>
+        </div>
       </div>
-      </section>
     </div>
 
     <section class="adress page-body__adress">
       <h2 class="visually-hidden">Адрес веб студии Nerds</h2>
       <div class="adress__map">
-        <img src="img/map-marker.png" alt="Веб студия Nerds на карте" class="adress__image" width="1440" height="785">
+        <img src="img/map-marker.jpg" alt="Веб студия Nerds на карте" class="adress__image" width="1440" height="416">
       </div>
 
       <div class="adress__wrapper">

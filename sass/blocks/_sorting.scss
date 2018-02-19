@@ -23,12 +23,13 @@
   }
 
   &__item {
-    margin-right: 25px;
+
   }
 
   &__link {
     @include reset-style-link;
 
+    margin-right: 25px;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -47,6 +48,7 @@
     &--wane,
     &--growth {
       display: inline-block;
+      margin-right: 0;
       width: 11px;
       height: 10px;
 
@@ -55,6 +57,9 @@
     }
 
     &--wane {
+      margin-left: 25px;
+      margin-right: 17px;
+
       background-image: url("../img/sorting-down.svg");
     }
 

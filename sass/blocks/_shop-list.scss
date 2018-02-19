@@ -7,27 +7,40 @@
   flex-wrap: wrap;
 
   width: 100%;
+  margin-bottom: 27px;
 
   &__item {
     position: relative;
     margin-bottom: 33px;
     width: 360px;
+
+    overflow: hidden;
+    transition: box-shadow ease-in-out 0.5s;
+
+    &:hover {
+      box-shadow: 0 6px 15px rgba(#000000, 0.25);
+    }
   }
 
   &__link {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+
+    &:focus {
+      box-shadow: 0 6px 15px rgba(#000000, 0.25);
+    }
   }
 
   &__browser-head {
     width: 360px;
     height: 40px;
-  }
 
-  &__image {
-    width: 360px;
-    height: 576px;
+    fill: rgba($shop-card-browser-color, 0.12);
+
+    &--active {
+      fill: $shop-card-browser-color;
+    }
   }
 
   &__description {
@@ -39,13 +52,19 @@
     flex-direction: column;
 
     width: 240px;
-    padding: 30px 60px 40px;
+    padding: 30px 60px 42px;
 
     background-color: $shop-card-description-background;
+    transform: translateY(200px) scale(0);
+    transition: transform ease-in-out 0.8s;
+
+    &--active {
+      transform: translateY(0) scale(1);
+    }
   }
 
   &__title {
-    margin-bottom: 15px;
+    margin-bottom: 11px;
 
     font-size: 18px;
     line-height: 30px;
@@ -53,7 +72,7 @@
   }
 
   &__text {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
 
     line-height: 18px;
     color: $shop-card-text-color;
@@ -63,8 +82,7 @@
   &__button {
     @include reset-style-link;
 
-    padding: 15px 60px;
-    // margin-bottom: 15px;
+    padding: 16px 60px;
 
     color: $text-button-color;
   }

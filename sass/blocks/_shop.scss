@@ -1,10 +1,12 @@
 .shop {
-  @include content-box;
+  &__wrapper {
+    @include content-box;
 
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 
   &__filter {
     width: 260px;

@@ -26,12 +26,27 @@
     margin-bottom: 17px;
   }
 
+  &__range {
+    margin-bottom: 55px;
+  }
+
   &__button {
     width: 100%;
-    padding: 15px 0;
+    padding: 16px 0;
 
+    font-weight: 500;
     color: $text-color;
 
     background-color: $filter-button-background;
+
+    &:hover {
+      background-color: $filter-button-hover-background;
+    }
+
+    &:active {
+      color: rgba($text-color, 0.3);
+
+      background-color: $filter-button-click-background;
+    }
   }
 }

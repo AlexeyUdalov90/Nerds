@@ -24,9 +24,25 @@
     padding: 35px 0;
   }
 
+  &__item {
+    position: relative;
+
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: 29px;
+      right: -20px;
+      width: 2px;
+      height: 52px;
+
+      background-color: $gray-lighten;
+    }
+  }
+
   &__link {
     @include reset-style-link;
 
+    display: block;
     width: 260px;
     height: 110px;
 
