@@ -1,6 +1,4 @@
 .filter-form {
-  width: 260px;
-
   &__title {
     margin-bottom: 10px;
 
@@ -10,14 +8,14 @@
     text-transform: uppercase;
 
     &--cost {
-      margin-bottom: 50px;
+      margin-bottom: 48px;
     }
   }
 
   &__list {
     @include reset-style-list;
 
-    margin-bottom: 40px;
+    margin-bottom: 42px;
 
     &--features {
       margin-bottom: 45px;

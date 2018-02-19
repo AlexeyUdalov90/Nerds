@@ -1,0 +1,39 @@
+.paginator {
+  @include reset-style-list;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+
+  &__item {
+    margin-right: 10px;
+  }
+
+  &__link {
+    @include reset-style-link;
+
+    display: block;
+    padding: 16px 80px;
+
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    background-color: $gray-lighten;
+    border-radius: 3px;
+
+    &--page {
+      padding: 0;
+      width: 50px;
+      height: 50px;
+
+      line-height: 50px;
+      text-align: center;
+    }
+
+    &--current {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 3px $gray-dark;
+    }
+  }
+}

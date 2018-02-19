@@ -1,0 +1,65 @@
+.sorting {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+
+  &__title {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    @include reset-style-list;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+
+    margin-left: auto;
+  }
+
+  &__item {
+    margin-right: 25px;
+  }
+
+  &__link {
+    @include reset-style-link;
+
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &--current,
+    &:active {
+      opacity: 1;
+    }
+
+    &--wane,
+    &--growth {
+      display: inline-block;
+      width: 11px;
+      height: 10px;
+
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &--wane {
+      background-image: url("../img/sorting-down.svg");
+    }
+
+    &--growth {
+      background-image: url("../img/sorting-up.svg");
+    }
+  }
+}

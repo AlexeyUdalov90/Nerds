@@ -5,11 +5,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 10px;
-  margin-right: 40px;
+
+  &__item {
+    margin-right: 47px;
+  }
 
   &__link {
     @include reset-style-link;
-
-    margin-right: 47px;
   }
 }
