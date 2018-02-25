@@ -5,12 +5,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 10px;
+}
 
-  &__item {
-    margin-right: 47px;
-  }
+.site-navigation__item {
+  margin-right: 47px;
+}
 
-  &__link {
-    @include reset-style-link;
-  }
+.site-navigation__link {
+  @include reset-style-link;
 }

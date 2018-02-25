@@ -1,48 +1,52 @@
 .adress {
   position: relative;
-  min-height: 415px;
-  overflow: hidden;
+  height: 415px;
+  // overflow: hidden;
 
-  &__map {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
+  background-image: url("../img/map-marker.jpg");
+  background-position: center;
+}
 
-  &__wrapper {
-    @include content-box;
-  }
+.adress__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
-  &__contacts {
-    width: 220px;
-    margin-top: 54px;
-    padding: 50px;
-    padding-bottom: 47px;
+.adress__wrapper {
+  @include content-box;
+  border-top: 1px solid transparent;
+}
 
-    background-color: #ffffff;
-  }
+.adress__contacts {
+  width: 220px;
+  margin-top: 54px;
+  padding: 50px;
+  padding-bottom: 47px;
 
-  &__title {
-    font-size: 18px;
-    line-height: 30px;
-  }
+  background-color: #ffffff;
+}
 
-  &__text {
-    margin: 0;
-    padding: 0;
-    margin-top: 20px;
-    margin-bottom: 5px;
-  }
+.adress__title {
+  font-size: 18px;
+  line-height: 30px;
+}
 
-  &__button {
-    @include reset-style-link;
+.adress__text {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
 
-    display: block;
-    padding: 16px 0;
-    margin-top: 35px;
+.adress__button {
+  @include reset-style-link;
 
-    text-align: center;
-    color: #ffffff;
-  }
+  display: block;
+  padding: 16px 0;
+  margin-top: 35px;
+
+  text-align: center;
+  color: #ffffff;
 }

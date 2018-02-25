@@ -1,29 +1,56 @@
 .radio {
+  color: $text-color;
   cursor: pointer;
 
-  &--disabled {
-    opacity: 0.1;
-  }
+  &:hover {
+    color: #000000;
 
-  &__control {
-    display: inline-block;
-    width: 9px;
-    height: 9px;
-    padding: 4px;
-    margin-right: 10px;
-    vertical-align: top;
+    .radio__control {
+      border-color: $radio-color;
+    }
 
-    background-clip: content-box;
-    border: 4px solid $radio-color;
-    border-radius: 50%;
-    opacity: 0.4;
-
-    &--checked {
+    .radio__input:checked + .radio__control {
       background-color: $radio-color;
     }
+  }
+}
 
-    &:hover {
-      opacity: 1;
-    }
+.radio__control {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  padding: 4px;
+  margin-right: 10px;
+  vertical-align: top;
+
+  background-clip: content-box;
+  border: 4px solid rgba($radio-color, 0.4);
+  border-radius: 50%;
+}
+
+.radio__input {
+  &:checked + .radio__control {
+    background-color: rgba($radio-color, 0.4);
+  }
+
+  &:checked:focus + .radio__control {
+    border-color: $radio-color;
+    background-color: $radio-color;
+  }
+
+  &:disabled + .radio__control,
+  &:disabled:focus + .radio__control {
+    border-color: rgba($radio-color, 0.1);
+  }
+
+  &:disabled:checked + .radio__control,
+  &:disabled:checked:focus + .radio__control {
+    border-color: rgba($radio-color, 0.1);
+    background-color: rgba($radio-color, 0.1);
+  }
+
+  &:disabled ~ .radio__text,
+  &:disabled:focus ~ .radio__text {
+    color: rgba($text-color, 0.3);
   }
 }

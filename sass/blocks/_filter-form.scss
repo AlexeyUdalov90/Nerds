@@ -1,52 +1,50 @@
-.filter-form {
-  &__title {
-    margin-bottom: 10px;
+.filter-form__title {
+  margin-bottom: 10px;
 
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
 
-    &--cost {
-      margin-bottom: 48px;
-    }
+  &--cost {
+    margin-bottom: 48px;
+  }
+}
+
+.filter-form__list {
+  @include reset-style-list;
+
+  margin-bottom: 42px;
+
+  &--features {
+    margin-bottom: 45px;
+  }
+}
+
+.filter-form__item:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.filter-form__range {
+  margin-bottom: 55px;
+}
+
+.filter-form__button {
+  width: 100%;
+  padding: 16px 0;
+
+  font-weight: 500;
+  color: $text-color;
+
+  background-color: $filter-button-background;
+
+  &:hover {
+    background-color: $filter-button-hover-background;
   }
 
-  &__list {
-    @include reset-style-list;
+  &:active {
+    color: rgba($text-color, 0.3);
 
-    margin-bottom: 42px;
-
-    &--features {
-      margin-bottom: 45px;
-    }
-  }
-
-  &__item:not(:last-child) {
-    margin-bottom: 17px;
-  }
-
-  &__range {
-    margin-bottom: 55px;
-  }
-
-  &__button {
-    width: 100%;
-    padding: 16px 0;
-
-    font-weight: 500;
-    color: $text-color;
-
-    background-color: $filter-button-background;
-
-    &:hover {
-      background-color: $filter-button-hover-background;
-    }
-
-    &:active {
-      color: rgba($text-color, 0.3);
-
-      background-color: $filter-button-click-background;
-    }
+    background-color: $filter-button-click-background;
   }
 }

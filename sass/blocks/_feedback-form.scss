@@ -1,25 +1,25 @@
 .feedback-form {
   width: 760px;
+}
 
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
+.feedback-form__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 
-    margin-bottom: 15px;
-  }
+  margin-bottom: 15px;
+}
 
-  &__name,
-  &__email {
-    flex-basis: 360px;
-  }
+.feedback-form__name,
+.feedback-form__email {
+  width: 360px;
+}
 
-  &__text {
-    flex-grow: 1;
-  }
+.feedback-form__text {
+  flex-grow: 1;
+}
 
-  &__button {
-    padding: 15px 80px;
-  }
+.feedback-form__button {
+  padding: 15px 80px;
 }
