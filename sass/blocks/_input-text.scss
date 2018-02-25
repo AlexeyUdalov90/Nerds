@@ -6,39 +6,39 @@
   margin-bottom: 30px;
 
   color: $input-text-color;
+}
 
-  &__label {
-    font-weight: 700;
+.input-text__label {
+  font-weight: 700;
+}
+
+.input-text__field {
+  padding: 10px;
+
+  font: inherit;
+
+  border: 2px solid $input-border-color;
+  border-radius: 3px;
+
+  &::placeholder {
+    font: inherit;
+    color: rgba($input-text-color, 0.5);
   }
 
-  &__field {
-    padding: 10px;
+  &:invalid {
+    color: $invalid-value-color;
+    border-color: $invalid-value-color;
+  }
 
-    font: inherit;
+  &:hover {
+    border-color: $input-hover-border-color;
+  }
 
-    border: 2px solid $input-border-color;
-    border-radius: 3px;
+  &:focus {
+    border-color: $input-focus-border-color;
+  }
 
-    &::placeholder {
-      font: inherit;
-      color: rgba($input-text-color, 0.5);
-    }
-
-    &:invalid {
-      color: $invalid-value-color;
-      border-color: $invalid-value-color;
-    }
-
-    &:hover {
-      border-color: $input-hover-border-color;
-    }
-
-    &:focus {
-      border-color: $input-focus-border-color;
-    }
-
-    &--textarea {
-      resize: none;
-    }
+  &--textarea {
+    resize: none;
   }
 }

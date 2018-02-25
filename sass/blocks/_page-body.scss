@@ -1,5 +1,6 @@
 .page-body {
-  width: 1440px;
+  max-width: 1440px;
+  min-width: 1200px;
   margin: 0 auto;
   padding: 0;
 
@@ -11,16 +12,16 @@
   color: $text-color;
 
   background-color: $page-background;
+}
 
-  &__header {
-    padding-top: 50px;
-  }
+.page-body__header {
+  padding-top: 50px;
+}
 
-  &__main {
-    margin-bottom: 70px;
-  }
+.page-body__main {
+  margin-bottom: 70px;
+}
 
-  &__footer {
-    padding-bottom: 70px;
-  }
+.page-body__footer {
+  padding-bottom: 70px;
 }

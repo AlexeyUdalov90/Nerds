@@ -1,94 +1,90 @@
-.slider {
+.slider__wrapper {
+  @include content-box;
+
   position: relative;
+}
 
-  &__wrapper {
-    @include content-box;
+.slider__list {
+  @include reset-style-list;
+}
+
+.slider__item {
+  display: none;
+  // width: 100%;
+  padding-top: 80px;
+
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
+  &--first {
+    background-image: url("../img/slide-1.png");
   }
 
-  &__list {
-    @include reset-style-list;
-
-    position: relative;
-    min-height: 430px;
+  &--second {
+    background-image: url("../img/slide-2.png");
   }
 
-  &__item {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-top: 80px;
-
-    background-repeat: no-repeat;
-    background-position: right bottom;
-
-    &--first {
-      background-image: url("../img/slide-1.png");
-    }
-
-    &--second {
-      background-image: url("../img/slide-2.png");
-    }
-
-    &--third {
-      background-image: url("../img/slide-3.png");
-    }
-
-    &--active {
-      display: block;
-    }
+  &--third {
+    background-image: url("../img/slide-3.png");
   }
 
-  &__content {
-    width: 510px;
+  &--active {
+    display: block;
+  }
+}
+
+.slider__content {
+  width: 510px;
+}
+
+.slider__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 400;
+}
+
+.slider__text {
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.slider__button {
+  @include reset-style-link;
+
+  display: inline-block;
+  padding: 16px 55px;
+  margin-bottom: 79px;
+
+  color: $text-button-color;
+}
+
+.slider__controls {
+  position: absolute;
+  left: 555px;
+  bottom: 90px;
+  z-index: 10;
+}
+
+.slider__toggle {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  margin-right: 15px;
+
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-image: radial-gradient(circle, #ffffff 2px, $gray 2px, $gray 4px, #ffffff 4px);
   }
 
-  &__title {
-    margin: 0;
-    margin-bottom: 25px;
-
-    font-size: 55px;
-    line-height: 55px;
-    font-weight: 400;
-  }
-
-  &__text {
-    margin: 0;
-    margin-bottom: 38px;
-  }
-
-  &__button {
-    @include reset-style-link;
-
-    display: inline-block;
-    padding: 16px 55px;
-    margin-bottom: 79px;
-
-    color: $text-button-color;
-  }
-
-  &__control {
-    position: absolute;
-    left: 600px;
-    bottom: 95px;
-    z-index: 10;
-  }
-
-  &__toggle {
-    width: 8px;
-    height: 8px;
-    padding: 0;
-    margin-right: 25px;
-    box-sizing: border-box;
-
-    background-color: #ffffff;
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    box-shadow: 0 0 0 5px #ffffff;
-
-    &--active {
-      border-color: $gray-dark;
-    }
+  &:active,
+  &--active {
+    background-image: radial-gradient(circle, #ffffff 2px, $slider-toggle-active 2px, $slider-toggle-active 4px, #ffffff 4px);
   }
 }

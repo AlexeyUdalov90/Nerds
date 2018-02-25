@@ -1,63 +1,73 @@
 .range {
-  &__box {
-    position: relative;
-    width: 260px;
-    height: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
-    background-color: $gray-lighten;
-    border-radius: 3px;
-  }
+.range__box {
+  position: relative;
+  width: 260px;
+  height: 80px;
+  margin-bottom: 14px;
 
-  &__line {
+  background-color: $gray-lighten;
+  border-radius: 3px;
+}
+
+.range__line {
+  position: absolute;
+  top: 39px;
+  left: 20px;
+  width: 220px;
+  height: 2px;
+
+  background-image: linear-gradient(to right, $range-line-color-first 150px, $range-line-color-second 150px);
+
+  &::before,
+  &::after {
+    content: "";
     position: absolute;
-    top: 39px;
-    left: 20px;
-    width: 220px;
-    height: 2px;
+    top: -9px;
+    width: 4px;
+    height: 4px;
 
-    background-image: linear-gradient(to right, $range-line-color-first 150px, $range-line-color-second 150px);
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: -9px;
-      width: 4px;
-      height: 4px;
-
-      background: $range-toggle-background;
-      border: 8px solid #ffffff;
-      border-radius: 50%;
-      box-shadow: 0 2px 2px 0 rgba(#000000, 0.5);
-      cursor: pointer;
-    }
-
-    &::after {
-      right: 60px;
-    }
+    background: $range-toggle-background;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px 0 rgba(#000000, 0.5);
+    cursor: pointer;
   }
 
-  &__text {
-    margin: 0;
-    margin-top: 14px;
-
-    line-height: 22px;
-    text-transform: uppercase;
+  &::after {
+    right: 60px;
   }
+}
 
-  &__number {
-    display: inline-block;
-    width: 80px;
-    margin-left: 8px;
-    padding: 9px 0;
+.range__text {
+  margin: 0;
+}
 
-    text-align: center;
+.range__label {
+  margin-right: 8px;
 
-    background-color: $gray-lighten;
-    border-radius: 3px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
 
-    &:first-of-type {
-      margin-right: 28px;
-    }
+.range__input {
+  width: 80px;
+  padding: 7px 0;
+
+  font: inherit;
+  text-align: center;
+
+  background-color: $gray-lighten;
+  border: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: $text-color;
   }
 }

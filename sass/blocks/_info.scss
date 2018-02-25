@@ -1,16 +1,15 @@
-.info {
-  &__wrapper {
-    @include content-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+.info__wrapper {
+  @include content-box;
 
-  &__about-us {
-    flex-basis: 700px;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-  &__statistic {
-    flex-basis: 360px;
-  }
+.info__about-us {
+  width: 700px;
+}
+
+.info__statistic {
+  width: 360px;
 }

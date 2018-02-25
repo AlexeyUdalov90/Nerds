@@ -1,30 +1,63 @@
 .checkbox {
+  color: $text-color;
   cursor: pointer;
 
-  &__control {
-    display: inline-block;
-    width: 19px;
-    height: 19px;
-    margin-right: 13px;
-    vertical-align: top;
+  &:hover {
+    color: #000000;
 
-    border: 2px solid $checkbox-color;
-    border-radius: 3px;
-    opacity: 0.4;
-
-    &--checked::before {
-      content: "";
-      display: block;
-      width: 16px;
-      height: 6px;
-
-      border-left: 4px solid $checkbox-color;
-      border-bottom: 4px solid $checkbox-color;
-      transform: translate(3px, 2px) rotate(-45deg);
+    .checkbox__control,
+    .checkbox__input:checked + .checkbox__control::before {
+      border-color: $checkbox-color;
     }
 
-    &:hover {
-      opacity: 1;
+    .checkbox__text {
+      color: #000000;
     }
+  }
+}
+
+.checkbox__control {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin-right: 13px;
+  vertical-align: top;
+
+  border: 2px solid rgba($checkbox-color, 0.4);
+  border-radius: 3px;
+}
+
+.checkbox__input {
+  &:checked + .checkbox__control::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 6px;
+
+    border-left: 4px solid rgba($checkbox-color, 0.4);
+    border-bottom: 4px solid rgba($checkbox-color, 0.4);
+    transform: translate(3px, 2px) rotate(-45deg);
+  }
+
+  &:disabled + .checkbox__control,
+  &:checked:disabled + .checkbox__control::before {
+    border-color: rgba($checkbox-color, 0.1);
+  }
+
+  &:focus + .checkbox__control,
+  &:checked:focus + .checkbox__control::before {
+    border-color: $checkbox-color;
+  }
+
+  &:focus ~ .checkbox__text,
+  &:checked:focus ~ .checkbox__text {
+    color: #000000;
+  }
+
+  &:disabled ~ .checkbox__text,
+  &:disabled:focus ~ .checkbox__text,
+  &:disabled:checked ~ .checkbox__text,
+  &:disabled:checked:focus ~ .checkbox__text {
+    color: rgba($text-color, 0.3);
   }
 }

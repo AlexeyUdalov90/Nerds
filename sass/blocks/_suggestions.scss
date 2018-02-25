@@ -1,44 +1,30 @@
-.suggestions {
-  &__wrapper {
-    @include content-box;
+.suggestions__wrapper {
+  @include content-box;
 
-    &::after {
-      content: "";
-      display: block;
-      height: 2px;
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
 
-      background-color: $gray-lighten;
-      background-clip: padding-box;
-    }
+    background-color: $gray-lighten;
+    background-clip: padding-box;
   }
+}
 
-  &__list {
-    @include reset-style-list;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 80px;
-  }
+.suggestions__list {
+  @include reset-style-list;
 
-  &__item {
-    width: 300px;
-  }
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
 
-  &__title {
-    margin: 0;
-    margin-bottom: 13px;
-    font-size: 24px;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
+.suggestions__item {
+  width: 300px;
 
-  &__text {
-    margin: 0;
-    margin-bottom: 32px;
-  }
-
-  &__item::before {
+  &::before {
     content: "";
     display: block;
     width: 300px;
@@ -49,50 +35,65 @@
     background-position: top left;
   }
 
-  &__item--site::before {
+  &--site::before {
     background-color: $red;
     background-image: url("../img/sites.png");
   }
 
-  &__item--app::before {
+  &--app::before {
     background-color: $green;
     background-image: url("../img/apps.png");
   }
 
-  &__item--presentation::before {
+  &--presentation::before {
     background-color: $yellow;
     background-image: url("../img/presentations.png");
   }
+}
 
-  &__button {
-    @include reset-style-link;
+.suggestions__title {
+  margin: 0;
+  margin-bottom: 13px;
 
-    display: inline-block;
-    padding: 16px 40px;
-    color: #ffffff;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
 
-    &--app {
-      background-color: $app-button-background;
+.suggestions__text {
+  margin: 0;
+  margin-bottom: 32px;
+}
 
-      &:hover {
-        background-color: $app-button-hover-background;
-      }
+.suggestions__button {
+  @include reset-style-link;
 
-      &:active {
-        background-color: $app-button-click-background;
-      }
+  display: inline-block;
+  padding: 16px 40px;
+
+  color: #ffffff;
+
+  &--app {
+    background-color: $app-button-background;
+
+    &:hover {
+      background-color: $app-button-hover-background;
     }
 
-    &--presentation {
-      background-color: $presentation-button-background;
+    &:active {
+      background-color: $app-button-click-background;
+    }
+  }
 
-      &:hover {
-        background-color: $presentation-button-hover-background;
-      }
+  &--presentation {
+    background-color: $presentation-button-background;
 
-      &:active {
-        background-color: $presentation-button-click-background;
-      }
+    &:hover {
+      background-color: $presentation-button-hover-background;
+    }
+
+    &:active {
+      background-color: $presentation-button-click-background;
     }
   }
 }

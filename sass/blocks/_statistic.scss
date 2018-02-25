@@ -1,37 +1,38 @@
 .statistic {
   padding-top: 40px;
+}
 
-  &__logo {
-    margin-bottom: 30px;
-  }
+.statistic__logo {
+  margin-bottom: 30px;
+}
 
-  &__caption {
-    margin-bottom: 43px;
+.statistic__caption {
+  margin-bottom: 43px;
 
-    font-weight: 700;
-    text-transform: uppercase;
-  }
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
-  &__table {
-    border-collapse: collapse;
-  }
+.statistic__table {
+  border-collapse: collapse;
+}
 
-  &__number {
-    width: 120px;
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 45px;
-  }
+.statistic__number {
+  width: 120px;
 
-  &__percent {
-    font-size: 24px;
-    line-height: 24px;
-    vertical-align: super;
-  }
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+}
 
-  &__text {
-    padding-top: 13px;
+.statistic__percent {
+  font-size: 24px;
+  line-height: 24px;
+  vertical-align: super;
+}
 
-    line-height: 18px;
-  }
+.statistic__text {
+  padding-top: 13px;
+
+  line-height: 18px;
 }
