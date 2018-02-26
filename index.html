@@ -208,22 +208,22 @@
 
   <section class="feedback-popup">
     <h2 class="feedback-popup__title">Напишите нам</h2>
-    <form action="#" method="post" class="feedback-form feedback-popup__form">
+    <form action="mailto:armiman69@gmail.com" method="post" class="feedback-form feedback-popup__form" enctype="text/plain">
       <div class="feedback-form__wrapper">
         <p class="input-text feedback-form__name">
           <label for="name" class="input-text__label">Ваше имя:</label>
-          <input type="text" class="input-text__field" name="name" id="name" placeholder="Представтесь, пожалуйста">
+          <input type="text" class="input-text__field" name="name" id="name" placeholder="Представтесь, пожалуйста" required>
         </p>
         <p class="input-text feedback-form__email">
           <label for="email" class="input-text__label">Ваш e-mail:</label>
-          <input type="email" class="input-text__field" name="email" id="email" placeholder="Для отправки ответа">
+          <input type="email" class="input-text__field" name="email" id="email" placeholder="Для отправки ответа" required>
         </p>
         <p class="input-text feedback-form__text">
           <label for="text" class="input-text__label">Текст письма:</label>
-          <textarea name="text" id="text" cols="30" rows="4" class="input-text__field input-text__field--textarea" placeholder="В свободной форме"></textarea>
+          <textarea name="text" id="text" cols="30" rows="4" class="input-text__field input-text__field--textarea" placeholder="В свободной форме" required></textarea>
         </p>
       </div>
-      <button class="button feedback-form__button button--color-red" type="submit">Отправить</button>
+      <button class="button feedback-form__button" type="submit">Отправить</button>
     </form>
     <button class="button feedback-popup__button-close" type="button">
       <span class="visually-hidden">Закрыть</span>
