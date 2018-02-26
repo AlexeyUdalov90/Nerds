@@ -161,6 +161,7 @@ img {
   .navigation__item--current::after {
     content: "";
     position: absolute;
+    left: 0;
     bottom: -5px;
     width: 100%;
     height: 2px;
@@ -288,6 +289,7 @@ img {
 
 .slider__item {
   display: none;
+  width: 100%;
   padding-top: 80px;
   background-repeat: no-repeat;
   background-position: right bottom; }
@@ -552,7 +554,7 @@ img {
   width: 260px;
   height: 110px;
   opacity: 0.2; }
-  .projects__link:hover {
+  .projects__link:hover, .projects__link:focus {
     opacity: 1; }
   .projects__link:active {
     opacity: 0.1; }
@@ -652,7 +654,8 @@ img {
 
 .filter-form__button {
   width: 100%;
-  padding: 16px 0;
+  padding: 14px 0;
+  font: inherit;
   font-weight: 500;
   color: #283136;
   background-color: #eeeeee; }
@@ -724,14 +727,6 @@ img {
   border-radius: 3px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
-  .range__input::-webkit-input-placeholder {
-    color: #283136; }
-  .range__input:-ms-input-placeholder {
-    color: #283136; }
-  .range__input::-ms-input-placeholder {
-    color: #283136; }
-  .range__input::placeholder {
-    color: #283136; }
 
 .radio {
   color: #283136;
@@ -1208,4 +1203,6 @@ img {
           flex-grow: 1; }
 
 .feedback-form__button {
-  padding: 15px 80px; }
+  padding: 15px 80px;
+  font: inherit;
+  font-weight: 500; }

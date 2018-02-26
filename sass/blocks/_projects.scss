@@ -47,7 +47,8 @@
 
   opacity: 0.2;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 1;
   }
 
