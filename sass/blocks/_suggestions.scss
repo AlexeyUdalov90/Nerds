@@ -22,7 +22,11 @@
 }
 
 .suggestions__item {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
   width: 300px;
+  min-height: 347px;
 
   &::before {
     content: "";
@@ -68,7 +72,8 @@
 .suggestions__button {
   @include reset-style-link;
 
-  display: inline-block;
+  align-self: flex-start;
+  margin-top: auto;
   padding: 16px 40px;
 
   color: #ffffff;

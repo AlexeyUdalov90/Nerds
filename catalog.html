@@ -47,7 +47,7 @@
         <section class="shop__filter">
           <h2 class="visually-hidden">Фильтр</h2>
           <form action="#" method="get" class="filter-form">
-            <fildset class="filter-form__cost">
+            <fieldset class="filter-form__section">
               <legend class="filter-form__title filter-form__title--cost">Стоимость:</legend>
               <div class="range filter-form__range">
                 <div class="range__box">
@@ -62,8 +62,8 @@
                   <input type="text" class="range__input" id="range-to" name="range-to" value="15000" readonly>
                 </p>
               </div>
-            </fildset>
-            <fildset class="filter-form__grid">
+            </fieldset>
+            <fieldset class="filter-form__section">
               <legend class="filter-form__title">Сетка:</legend>
               <ul class="filter-form__list">
                 <li class="filter-form__item">
@@ -85,8 +85,8 @@
                   </label>
                 </li>
               </ul>
-            </fildset>
-            <fildset class="filter-form__features">
+            </fieldset>
+            <fieldset class="filter-form__section">
               <legend class="filter-form__title">Особенности:</legend>
               <ul class="filter-form__list filter-form__list--features">
                 <li class="filter-form__item">
@@ -120,7 +120,7 @@
                   </label>
                 </li>
               </ul>
-            </fildset>
+            </fieldset>
             <button class="button filter-form__button" type="submit">Показать</button>
           </form>
         </section>
@@ -173,7 +173,7 @@
                 </a>
                 <div class="shop-list__description">
                   <b class="shop-list__title">Barbershop</b>
-                  <span class="shop-list__text">Сайт салоны красоты.Для мужчин, да.</span>
+                  <span class="shop-list__text">Сайт салоны красоты. Для мужчин, да.</span>
                   <a href="#" class="button shop-list__button" tabindex="-1">9 900 руб.</a>
                 </div>
               </li>
@@ -234,16 +234,17 @@
       </div>
     </div>
 
-    <section class="adress page-body__adress">
+    <section class="adress page-main__adress">
       <h2 class="visually-hidden">Адрес веб студии Nerds</h2>
+      <div class="adress__map">
+        <iframe class="adress__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123823!2d30.32089461578749!3d59.938796869048254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1519837516143" width="1440" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
 
-      <div class="adress__wrapper">
-        <div class="adress__contacts">
-          <b class="adress__title">NЁRDS DESIGN STUDIO</b>
-          <p class="adress__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <span class="adress__tel">тел. +7 (812) 275-75-75</span>
-          <a href="feedback.html" class="button adress__button">Напишите нам</a>
-        </div>
+      <div class="adress__contacts">
+        <b class="adress__title">NЁRDS DESIGN STUDIO</b>
+        <p class="adress__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <span class="adress__tel">тел. +7 (812) 275-75-75</span>
+        <a href="feedback.html" class="button adress__button">Напишите нам</a>
       </div>
     </section>
   </main>

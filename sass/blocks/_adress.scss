@@ -1,27 +1,21 @@
 .adress {
   position: relative;
+}
+
+.adress__map {
   height: 415px;
-  // overflow: hidden;
 
   background-image: url("../img/map-marker.jpg");
   background-position: center;
 }
 
-.adress__map {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.adress__wrapper {
-  @include content-box;
-  border-top: 1px solid transparent;
-}
-
 .adress__contacts {
+  position: absolute;
+  left: 140px;
+  top: 54px;
+  z-index: 1;
+
   width: 220px;
-  margin-top: 54px;
   padding: 50px;
   padding-bottom: 47px;
 
